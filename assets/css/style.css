@@ -1,0 +1,133 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Barra superior */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(246, 206, 127);
+    padding: 10px 20px; /* Reduzindo a altura */
+}
+
+/* Logo */
+.logo img {
+    height: 80px; /* Ajustado para menor altura */
+    max-width: 100%;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(15, 14, 14);
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: rgb(251, 251, 246);
+}
+
+/* Responsividade do menu */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Seção Hero */
+.hero {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+/* Carrossel de imagens */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Botões do carrossel */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Responsividade do carrossel */
+@media (max-width: 768px) {
+    .carousel-images img {
+        width: 100%;
+    }
+}
+
+/* Responsividade geral */
+@media (max-width: 480px) {
+    .hero {
+        padding: 20px;
+    }
+    
+    .prev, .next {
+        padding: 5px;
+        font-size: 14px;
+    }
+}

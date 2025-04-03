@@ -1,0 +1,110 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Barra superior */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(85, 78, 35);  /* Cor dourada */
+    padding: 15px 20px;
+}
+
+/* Logo */
+.logo img {
+    height: 100px;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+/* Estilo da seção hero */
+.hero {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+/* Estilo para os links da biblioteca */
+.biblioteca-links {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+}
+
+.biblioteca-links h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.biblioteca-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.biblioteca-links li {
+    margin: 10px 0;
+}
+
+.biblioteca-btn {
+    display: block;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.biblioteca-btn:hover {
+    background: linear-gradient(135deg, #ff5722, #ff9800);
+    transform: scale(1.05);
+}
